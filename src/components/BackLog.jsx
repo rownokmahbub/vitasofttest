@@ -24,9 +24,9 @@ export default function BackLog() {
    
   return (
     <div className="container mx-auto flex flex-col gap-5 mt-5">
-   <div className="flex justify-between items-center bg-white rounded-lg border-l-4 border-green-500 px-4 py-2.5">
+   <div className="flex justify-between items-center bg-white rounded-lg border-l-4 border-purple-500 px-4 py-2.5">
     <div className="flex items-center gap-2">
-    <h3 className="text-base font-semibold">Complete</h3>
+    <h3 className="text-base font-semibold">BackLog</h3>
     <p className="text-sm text-slate-400">4</p>
     
     </div>
