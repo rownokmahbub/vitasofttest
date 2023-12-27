@@ -26,7 +26,7 @@ export default function BackLog() {
     }, [])
    
   return (
-    <div className="container mx-auto flex flex-col gap-5 mt-5 bg-slate-100 px-4 py-4 rounded-xl border">
+    <div className="container mx-auto flex flex-col gap-5 mt-5 bg-gradient-to-r from-slate-50 to-stone-50 px-4 py-4 rounded-xl border">
    <div className="flex justify-between items-center bg-white border rounded-lg border-l-4 border-purple-500 px-4 py-2.5">
     <div className="flex items-center gap-2">
     <h3 className="text-base font-semibold">BackLog</h3>

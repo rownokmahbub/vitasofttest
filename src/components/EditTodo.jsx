@@ -40,7 +40,7 @@ export default function EditTodo() {
         ))}
       </Select>
               <Select 
-        label="Set Todo As" variant="faded"
+        label="Set Task As" variant="faded"
         className="w-full" size="sm" 
       >
         {animals.map((animal) => (
@@ -55,7 +55,7 @@ export default function EditTodo() {
                   Close
                 </Button>
                 <Button className="bg-green-600 text-white" onPress={onClose}>
-                  Update Todo
+                  Update Task
                 </Button>
               </ModalFooter>
             </>
