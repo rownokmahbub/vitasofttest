@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
+import CreateTodo from "./CreateTodo"
 
-import { FaSquarePlus } from "react-icons/fa6";
 export default function Doing() {
     const [users,setUsers]= useState([])
     useEffect(() => {
@@ -30,8 +30,7 @@ export default function Doing() {
     <p className="text-sm text-slate-400">4</p>
     
     </div>
-       
-    <FaSquarePlus className="text-xl cursor-pointer"/>
+    <CreateTodo/>
     </div>
     <div className="flex flex-col gap-3">
         {users && users.map((user)=>(
