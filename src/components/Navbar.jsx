@@ -10,7 +10,7 @@ export default function Navbar() {
     const navbar=[
         {
             label:'Todo App',
-            to:'/counter'
+            to:'/'
         },
        
 

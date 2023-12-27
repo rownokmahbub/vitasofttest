@@ -1,12 +1,15 @@
 
-import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure,} from "@nextui-org/react";
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Tooltip,} from "@nextui-org/react";
 import { TiDocumentDelete } from "react-icons/ti";
 export default function DeleteTodo() {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
   return (
     <>
-      <Button variant="light"  onPress={onOpen} isIconOnly>     <TiDocumentDelete className="text-2xl text-red-400 cursor-pointer"/></Button>
+       <Tooltip content="Delete">
+       <Button variant="light"  onPress={onOpen} isIconOnly>     <TiDocumentDelete className="text-2xl text-red-400 cursor-pointer"/></Button>
+    </Tooltip>
+     
       <Modal isDismissable={false} isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
           {(onClose) => (

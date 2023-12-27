@@ -1,5 +1,5 @@
 import { MdEditDocument } from "react-icons/md";
-import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Input, Select, SelectItem} from "@nextui-org/react";
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Input, Select, SelectItem, Tooltip} from "@nextui-org/react";
 
 export default function EditTodo() {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
@@ -17,7 +17,10 @@ export default function EditTodo() {
   ]
   return (
     <>
-      <Button variant="light"  onPress={onOpen} isIconOnly><MdEditDocument className="text-xl text-green-600 cursor-pointer"/></Button>
+     <Tooltip content="Edit">
+     <Button variant="light"  onPress={onOpen} isIconOnly><MdEditDocument className="text-xl text-green-600 cursor-pointer"/></Button>
+    </Tooltip>
+     
       <Modal className="max-w-3xl w-full" isDismissable={false} isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
           {(onClose) => (
