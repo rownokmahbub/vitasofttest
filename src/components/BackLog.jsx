@@ -41,15 +41,7 @@ export default function BackLog() {
    <div className="flex flex-col gap-3">
         {users && users.map((user)=>(
             <div key={user.id} className="flex flex-col bg-white rounded-lg  px-4 py-2.5">
-            <div className="flex justify-between items-center gap-2">
-    <p className="text-xs bg-cyan-600 rounded-full text-white px-2 py-1">{user.priority}</p>
-   
-    <div className="flex  items-center">
-<EditTodo/>
-   
-<DeleteTodo/>
-    </div>
-    </div>
+         
     <div className="flex justify-between items-start gap-3 mb-2">
     <h3 className="text-base font-semibold text-start">{user.task}</h3>
   
@@ -68,7 +60,15 @@ export default function BackLog() {
     <p className="text-sm text-slate-400 line-clamp-1">{user.assignee}</p>
     
     </div>
-    
+    <div className="flex justify-between items-center gap-2 border-t mt-4 pt-1">
+    <p className="text-xs bg-cyan-600 rounded-full text-white px-2 py-1">{user.priority}</p>
+   
+    <div className="flex  items-center">
+<EditTodo/>
+   
+<DeleteTodo/>
+    </div>
+    </div>
     </div>
         ))}
     </div>
