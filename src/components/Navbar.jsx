@@ -16,7 +16,7 @@ export default function Navbar() {
 
     ]
   return (
-    <div className="relative flex justify-between items-center">
+    <div className="relative flex justify-between items-center container mx-auto">
        <Link to='/'>
         <img className="h-14" src="https://vitasoftserver.vitasoftsolutions.com/upload/upload/Vitasoft_Logo_Draft_1.0-02.png" alt="logo" />
        </Link>
