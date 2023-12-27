@@ -17,7 +17,7 @@ export default function DeleteTodo() {
               <p className="text-slate-400 text-sm text-center">once you delete it can not be retrieved so be careful when you delete your todos</p>
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                <Button color="danger" variant="flat" onPress={onClose}>
                 No
                 </Button>
                 <Button color="primary" onPress={onClose}>

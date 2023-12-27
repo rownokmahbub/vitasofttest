@@ -26,8 +26,8 @@ export default function Complete() {
     }, [])
    
   return (
-    <div className="container mx-auto flex flex-col gap-5 mt-5">
-   <div className="flex justify-between items-center bg-white rounded-lg border-l-4 border-green-500 px-4 py-2.5">
+    <div className="container mx-auto flex flex-col gap-5 mt-5 bg-slate-100 px-4 py-4 rounded-xl border">
+   <div className="flex justify-between items-center bg-white border rounded-lg border-l-4 border-green-500 px-4 py-2.5">
     <div className="flex items-center gap-2">
     <h3 className="text-base font-semibold">Complete</h3>
     <p className="text-sm text-slate-400">4</p>
@@ -40,7 +40,7 @@ export default function Complete() {
     </div>
    <div className="flex flex-col gap-3">
         {users && users.map((user)=>(
-            <div key={user.id} className="flex flex-col bg-white rounded-lg  px-4 py-2.5">
+            <div key={user.id} className="flex flex-col bg-white border rounded-lg  px-4 py-2.5">
          
     <div className="flex justify-between items-start gap-3 mb-2">
     <h3 className="text-base font-semibold text-start">{user.task}</h3>

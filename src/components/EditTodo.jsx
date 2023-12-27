@@ -51,7 +51,7 @@ export default function EditTodo() {
       </Select>
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="faded" onPress={onClose}>
+                <Button color="danger" variant="flat" onPress={onClose}>
                   Close
                 </Button>
                 <Button className="bg-green-600 text-white" onPress={onClose}>
