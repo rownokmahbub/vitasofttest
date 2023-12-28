@@ -158,7 +158,7 @@ const TodoList = ({ title, tasks, onDelete, totalTasks, onRefresh }) => {
                 name="priority"
                 value={newTask.priority}
                 onChange={handleChange}
-                readOnly
+                isDisabled
               />
               <Input
                 variant="faded"
