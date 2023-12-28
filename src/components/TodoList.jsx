@@ -31,7 +31,7 @@ const TodoList = ({ title, tasks, onDelete, totalTasks, onRefresh }) => {
       );
       const createdTask = response.data;
       onRefresh(title);
-      // TODO: Update the UI with the created task (add to the corresponding list)
+    
       setShowCreateForm(false);
       setNewTask({
         task: "",
@@ -111,7 +111,7 @@ const TodoList = ({ title, tasks, onDelete, totalTasks, onRefresh }) => {
       </div>
       <div className="">
         {showCreateForm && (
-          <div className="">
+          <div className="bg-white px-4 py-6 rounded-xl drop-shadow-xl">
             <p className="text-lg font-semibold">Add Task Here</p>
             <form className="flex flex-col gap-3 ">
               <Input
@@ -209,16 +209,28 @@ const TodoList = ({ title, tasks, onDelete, totalTasks, onRefresh }) => {
                   Mark as completed
                 </label>
               </div>
-
+              <div className="flex items-center gap-2">
+             
               <Button
+                      color="danger"
+                      size="sm"
+                      variant="flat"
+                      onClick={()=>setShowCreateForm(false)}
+                    >
+                      Cancel
+                    </Button>
+                    <Button
                 type="button"
                 color="secondary"
                 variant="shadow"
                 onClick={handleCreate}
-                className="w-full"
+                className="px-5" size="sm"
               >
                 Create Task
               </Button>
+              </div>
+        
+             
             </form>
           </div>
         )}
@@ -228,7 +240,7 @@ const TodoList = ({ title, tasks, onDelete, totalTasks, onRefresh }) => {
           tasks.map((task) => (
             <div
               key={task.id}
-              className="bg-white border rounded-lg  px-4 py-2.5"
+              className="bg-white border rounded-lg drop-shadow-xl px-4 py-2.5"
             >
               {editingTask === task.id ? (
                 <div className="flex flex-col gap-3 items-start">
