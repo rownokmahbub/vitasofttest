@@ -1,5 +1,5 @@
 {
-  "name": "reactpractice",
+  "name": "vite-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.17",
     "@nextui-org/react": "^2.2.9",
+    "axios": "^1.6.3",
     "framer-motion": "^10.16.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
